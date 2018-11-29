@@ -1,9 +1,10 @@
-# Vim React Snippets
+# Vim React Native Snippets
 
-A Vim snippet library for React in ES6. You may also want to check out [vim-es2015-snippets](https://github.com/epilande/vim-es2015-snippets).
+Forked from[ Vim React Snippets ]( https://github.com/epilande/vim-react-snippets )and modified to suit my React Native development preferences.
 
 Requires [UltiSnips](https://github.com/SirVer/ultisnips).
 
+Example from vim-react-snippets
 ![vim-react-snippets](http://i.imgur.com/ImgaW2k.gif)
 
 ## Installation
@@ -11,53 +12,15 @@ Requires [UltiSnips](https://github.com/SirVer/ultisnips).
 Using [vim-plug](https://github.com/junegunn/vim-plug):
 
 ```vim
-" ES2015 code snippets (Optional)
-Plug 'epilande/vim-es2015-snippets'
-
-" React code snippets
-Plug 'epilande/vim-react-snippets'
+" React Native code snippets
+Plug 'morgsmccauley/vim-react-native-snippets'
 
 " Ultisnips
 Plug 'SirVer/ultisnips'
-
-" Trigger configuration (Optional)
-" let g:UltiSnipsExpandTrigger="<C-l>"
 ```
 
 ## Usage
-In a JavaScript or JSX file, type a trigger name while in Insert mode, then press Ultisnips trigger key. In my case I have it mapped to `<C-l>`.
-
-For example, let's say we have `ListItem.js`
-
-In Insert mode
-
-```javascript
-rfc<C-l>
-```
-
-Will expand to
-
-```javascript
-import React, { PropTypes } from 'react';
-import styles from './ListItem.css';
-
-const ListItem = ({ ...props }) => (
-  <div className={styles.base}>
-
-  </div>
-);
-
-ListItem.defaultProps = {
-};
-
-ListItem.propTypes = {
-};
-
-export default ListItem;
-```
-
-Check out [`UltiSnips/javascript.snippets`](UltiSnips/javascript.snippets) to see all snippets.
-
+In a JavaScript or JSX file, type a trigger name while in Insert mode, then tab.
 
 ## Snippets
 
@@ -65,25 +28,22 @@ Check out [`UltiSnips/javascript.snippets`](UltiSnips/javascript.snippets) to se
 
 | Trigger  | Content |
 | -------: | ------- |
-| `rrcc→`  | React Redux Class Component |
-| `rcc→`   | React Class Component |
-| `rfc→`   | React Functional Component |
-| `rsc→`   | React Styled Component |
-| `rsci→`   | React Styled Component Interpolation |
-
+| `rrcc→`  | React Native Redux Class Component |
+| `rcc→`   | React Native Class Component |
+| `rfc→`   | React Native Functional Component |
 
 #### Lifecycle
 
 | Trigger  | Content |
 | -------: | ------- |
-| `cwm→`   | `componentWillMount() {...}` |
-| `cdm→`   | `componentDidMount() {...}` |
-| `cwrp→`  | `componentWillReceiveProps(nextProps) {...}` |
-| `scup→`  | `shouldComponentUpdate(nextProps, nextState) {...}` |
-| `cwup→`  | `componentWillUpdate(nextProps, nextState) {...}` |
-| `cdup→`  | `componentDidUpdate(prevProps, prevState) {...}` |
-| `cwu→`   | `componentWillUnmount() {...}` |
-| `ren→`   | `render() {...}` |
+| `cwm→`   | `componentWillMount () {...}` |
+| `cdm→`   | `componentDidMount () {...}` |
+| `cwrp→`  | `componentWillReceiveProps (nextProps) {...}` |
+| `scup→`  | `shouldComponentUpdate (nextProps, nextState) {...}` |
+| `cwup→`  | `componentWillUpdate (nextProps, nextState) {...}` |
+| `cdup→`  | `componentDidUpdate (prevProps, prevState) {...}` |
+| `cwu→`   | `componentWillUnmount () {...}` |
+| `ren→`   | `render () {...}` |
 
 
 #### PropTypes
