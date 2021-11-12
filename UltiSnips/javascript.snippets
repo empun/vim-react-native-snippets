@@ -1,5 +1,5 @@
 # React Native & JSX
-snippet rrcc "React Native Redux Class Component" b
+snippet rnrcc "React Native Redux Class Component" b
 import React from 'react';
 import { $3 } from 'react-native'
 import { connect } from 'react-redux';
@@ -30,7 +30,7 @@ const mapDispatchToProps = dispatch => ({
 export default connect(mapStateToProps, mapDispatchToProps)($1);
 endsnippet
 
-snippet rcc "React Native Class Component" b
+snippet rncc "React Native Class Component" b
 import React from 'react';
 import { $3 } from 'react-native'
 import styles from './${2:$1Styles}.js'
@@ -50,7 +50,7 @@ export default class ${1:`!v expand('%:t:r')`} extends React.Component {
 }
 endsnippet
 
-snippet rfc "React Native Functional Component" b
+snippet rnfc "React Native Functional Component" b
 import React from 'react';
 import { $3 } from 'react-native'
 import styles from './${2:$1Styles}.js';
